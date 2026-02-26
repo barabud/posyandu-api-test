@@ -1,0 +1,25 @@
+info:
+  name: PUT Kader
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8000/api/kader/1
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101990020",
+        "nama": "Hamzah Dani",
+        "rt": "02",
+        "rw": "15",
+        "nik_kepala_keluarga": "3276010101019900"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

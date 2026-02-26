@@ -1,0 +1,23 @@
+info:
+  name: POST AnakPrasekolah
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/anak-prasekolah
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101019988",
+        "nama_ortu": "Dennis Test",
+        "id_paud": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

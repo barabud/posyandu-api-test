@@ -1,0 +1,26 @@
+info:
+  name: POST Kader
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/kader
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101990003",
+        "nama": "Manusia Clint",
+        "rt": "02",
+        "rw": "03",
+        "nik_kepala_keluarga": "3276010101019997",
+        "id_posyandu": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
